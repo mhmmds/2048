@@ -1,9 +1,7 @@
-
-import 'bootstrap';
-
-window.Vue = require('vue').default;
-
+import './bootstrap';
+import Application from "./components/Application";
 
 const app = new Vue({
-    
-}).$mount('#app');
+    el: '#app',
+    render : h => h(Application) ,
+});
